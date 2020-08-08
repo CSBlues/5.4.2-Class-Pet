@@ -34,5 +34,20 @@ public class TestMain {
         Pet pet = new Pet("Blue",8,80.0,"dog","Lab");
         assertEquals( "Blue, 8, 80.0, dog, Lab", pet.toString(),"Your toString() method needs to return all the data for the instance separated by a comma and space.");
     }
+    @Test
+    public void testSetters()
+    {
+        Pet pet = new Pet();
+        pet.setName ("Spot");
+        assertEquals("Spot", pet.getName(),"The setName() method did not set the instance variable correctly.");
+        pet.setAge (7);
+        assertEquals(7, pet.getAge(),"The setAge() method did not set the instance variable correctly.");
+        pet.setWeight (30);
+        assertEquals(30, pet.getWeight(),"The setWeight() method did not set the instance variable correctly.");
+        pet.setType ("dog");
+        assertEquals("dog", pet.getType(),"The setType() method did not set the instance variable correctly.");
+        pet.setBreed ("Mutt");
+        assertEquals("Mutt", pet.getBreed(),"The setBreed() method did not set the instance variable correctly.");
 
+    }
 }
