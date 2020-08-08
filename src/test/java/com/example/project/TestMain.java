@@ -42,7 +42,7 @@ public class TestMain {
         assertEquals("Spot", pet.getName(),"The setName() method did not set the instance variable correctly.");
         pet.setAge (7);
         assertEquals(7, pet.getAge(),"The setAge() method did not set the instance variable correctly.");
-        pet.setWeight (30);
+        pet.setWeight (30.0);
         assertEquals(30, pet.getWeight(),"The setWeight() method did not set the instance variable correctly.");
         pet.setType ("dog");
         assertEquals("dog", pet.getType(),"The setType() method did not set the instance variable correctly.");
